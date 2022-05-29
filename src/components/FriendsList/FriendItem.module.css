@@ -1,0 +1,29 @@
+
+.avatar {
+  height: 48px;
+}
+
+.name {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 15px;
+  margin: 0;
+}
+
+.statusOnline::before {
+  color: rgb(37, 175, 37);
+  content: '\2022';
+  font-size: 50px;
+  font-weight: 700;
+  left: 10px;
+  line-height: 40px;
+}
+
+.statusOffline::before {
+  color: rgb(192, 20, 55);
+  content: '\2022';
+  font-size: 50px;
+  font-weight: 700;
+  left: 10px;
+  line-height: 40px;
+}
