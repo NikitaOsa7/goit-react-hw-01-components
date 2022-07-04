@@ -1,7 +1,6 @@
 import PropTypes from 'prop-types'
 import s from "./Profile.module.css"
 
-
 export default function Profile({ username, tag, location, avatar, stats: { followers, views, likes } }) {
     return (
         <div className={s.profile}>
@@ -26,14 +25,13 @@ export default function Profile({ username, tag, location, avatar, stats: { foll
                     <span className={s.quantity}>{views}</span>
                 </li>
                 <li className={s.item}>
-                    <span className={s.label}>Likes</span>
+                    <span class={s.label}>Likes</span>
                     <span className={s.quantity}>{likes}</span>
                 </li>
             </ul>
         </div>
     );
-};
-
+}
 
 Profile.propTypes = {
     username: PropTypes.string.isRequired,
@@ -46,4 +44,3 @@ Profile.propTypes = {
         likes: PropTypes.number.isRequired,
     }),
 };
-
